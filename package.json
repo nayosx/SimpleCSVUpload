@@ -1,0 +1,30 @@
+{
+  "name": "simplecsvupload",
+  "version": "1.0.0",
+  "description": "simple project for upload csv files",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nayosx/SimpleCSVUpload.git"
+  },
+  "keywords": [
+    "node",
+    "csv"
+  ],
+  "author": "nayosx",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nayosx/SimpleCSVUpload/issues"
+  },
+  "homepage": "https://github.com/nayosx/SimpleCSVUpload#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "multer": "^1.4.3"
+  }
+}
