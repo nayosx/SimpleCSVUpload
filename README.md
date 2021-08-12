@@ -8,7 +8,7 @@ This project use
 - cors
 - nodemon
 
-First is create a directory "uploads"
+Is necesary create a directory "uploads"
 
 ## nodemon is installed for global env
 
