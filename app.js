@@ -32,7 +32,7 @@ const upload = multer({
 
 app.use(cors())
 
-app.post('/', upload.single('uploadFile'), (req, res) => {
+app.post('/upload/', upload.single('uploadFile'), (req, res) => {
     try{
         if(req.file == undefined) {
             res.status(400).send({
@@ -50,7 +50,7 @@ app.post('/', upload.single('uploadFile'), (req, res) => {
     }
 });
 
-app.get('/', (req, res) => {
+app.get('/upload/', (req, res) => {
     res.send("Hello from Node") ;
 });
 
