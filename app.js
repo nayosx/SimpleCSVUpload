@@ -1,11 +1,18 @@
 const multer = require('multer');
 const express = require('express');
 const cors = require('cors');
-const app = express();
 const path = require('path');
+const fs = require('fs');
+const app = express();
 const port = 3000;
 
 global.__basedir = __dirname;
+
+let uploads = __dirname + '/uploads';
+if (!fs.existsSync(uploads)) {
+    console.log('trying for create the directory "upload"');
+    fs.mkdirSync(uploads);
+}
 
 const storage = multer.diskStorage({
     destination: (req, file, callback) => {
