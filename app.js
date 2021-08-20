@@ -46,6 +46,7 @@ app.post('/upload/', upload.single('uploadFile'), (req, res) => {
                 message: "Please upload a CSV file: "
             });
         } else {
+            console.log('File upload');
             res.status(200).send({
                 message: "File Upload: "
             });
