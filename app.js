@@ -63,6 +63,10 @@ app.get('/upload/', (req, res) => {
 });
 
 
+require('dns').lookup(require('os').hostname(), (err, add, fam) => {
+    console.log('addr: ' + add);
+});
+
 app.listen(port, '0.0.0.0', () => {
     console.log(`App listening port ${port}`);
 });
